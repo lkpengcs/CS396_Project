@@ -1,0 +1,20 @@
+| model               | protected_attr   |      DPD |       EOD |      FPRD |       ECE |
+|:--------------------|:-----------------|---------:|----------:|----------:|----------:|
+| logistic_regression | sex              | 0.190853 | 0.133591  | 0.0815879 | 0.0101611 |
+| logistic_regression | race             | 0.287062 | 0.666667  | 0.157934  | 0.0101611 |
+| logistic_regression | age              | 0.230741 | 0.0952095 | 0.0909404 | 0.0101611 |
+| logistic_regression | marital.status   | 0.428027 | 0.669087  | 0.223104  | 0.0101611 |
+| logistic_regression | education        | 0.769231 | 0.889764  | 0.583333  | 0.0101611 |
+| logistic_regression | relationship     | 0.445726 | 0.673279  | 0.275862  | 0.0101611 |
+| random_forest       | sex              | 0.201406 | 0.067754  | 0.0995458 | 0.0186641 |
+| random_forest       | race             | 0.232275 | 0.666667  | 0.137931  | 0.0186641 |
+| random_forest       | age              | 0.299222 | 0.366537  | 0.129166  | 0.0186641 |
+| random_forest       | marital.status   | 0.443756 | 0.682573  | 0.240741  | 0.0186641 |
+| random_forest       | education        | 0.871795 | 0.951613  | 0.5625    | 0.0186641 |
+| random_forest       | relationship     | 0.450567 | 0.683781  | 0.249497  | 0.0186641 |
+| gradient_boosting   | sex              | 0.17474  | 0.0976629 | 0.0607057 | 0.0191104 |
+| gradient_boosting   | race             | 0.220396 | 0.666667  | 0.10306   | 0.0191104 |
+| gradient_boosting   | age              | 0.263973 | 0.293306  | 0.100317  | 0.0191104 |
+| gradient_boosting   | marital.status   | 0.387989 | 0.661826  | 0.155203  | 0.0191104 |
+| gradient_boosting   | education        | 0.765625 | 0.88189   | 0.583333  | 0.0191104 |
+| gradient_boosting   | relationship     | 0.382937 | 0.665111  | 0.155172  | 0.0191104 |
