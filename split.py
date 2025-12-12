@@ -29,4 +29,4 @@ y_train.to_csv("y_train.csv", index=False)
 y_val.to_csv("y_val.csv", index=False)
 y_test.to_csv("y_test.csv", index=False)
 
-print("✔️ Raw splits saved.")
+print("Raw splits saved.")

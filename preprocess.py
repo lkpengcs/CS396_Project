@@ -19,4 +19,4 @@ preprocessor = ColumnTransformer(
 preprocessor.fit(X_train)
 
 joblib.dump(preprocessor, "preprocessor.pkl")
-print("✔️ preprocessor.pkl saved.")
+print("preprocessor.pkl saved.")
