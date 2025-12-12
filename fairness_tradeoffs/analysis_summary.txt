@@ -1,0 +1,15 @@
+Fairness trade-offs: key figures and interpretation
+
+1) fairness_tradeoffs/figures/fairness_perf_correlation.png
+This heatmap shows Spearman correlations between fairness metrics (DPD, EOD, FPRD, ECE) and performance (accuracy, f1, auroc) across baseline, mitigated, and advanced runs. DPD/EOD/FPRD are tightly correlated with each other, confirming they move as a bundle. ECE is largely orthogonal or weakly related to the parity metrics. Performance aligns inversely with FPRD and DPD in mitigated runs, indicating that pushing down false-positive gaps often costs overall accuracy/AUROC. This figure is the clearest snapshot of interaction strength among definitions and their performance tension.
+
+2) fairness_tradeoffs/figures/accuracy_vs_FPRD.png
+The scatter plot (hue by run, style by model) directly visualizes the cost of reducing FPRD. Baseline points sit at higher accuracy with higher FPRD; mitigated points shift left (lower FPRD) but drop in accuracy. Advanced fair_reg_logreg sits further left on FPRD but with a notable calibration penalty (per ECE in other plots). This makes the trade-off concrete: lowering false-positive disparity typically pulls accuracy down, consistent with the heatmap¡¯s negative correlation.
+
+3) fairness_tradeoffs/figures/intersectional_fprd_eod.png
+This plot contrasts FPRD vs EOD for intersectional groups (e.g., sex+race, sex+age). Intersectional combinations expand the disparity envelope relative to single-attribute scores: several points show both higher FPRD and higher EOD than their single-attribute counterparts, indicating compounded risk. Models that look acceptable on single-axis fairness can still exhibit large gaps when attributes intersect, so mitigation choices should be stress-tested on these combinations.
+
+Overall takeaways
+- Parity metrics (DPD/EOD/FPRD) track together, so improving one usually improves the others; calibration (ECE) behaves differently and can worsen as parity improves, echoing known impossibility tensions.
+- Reducing false-positive disparity (FPRD) carries a visible accuracy cost; mitigated models trade off a few accuracy points for much smaller disparities, while advanced EO-focused models minimize EOD/FPRD but can suffer higher calibration error.
+- Intersectional evaluation reveals larger gaps than single-attribute analysis, underscoring the need to include multi-attribute slices when selecting mitigation strategies.

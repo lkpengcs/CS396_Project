@@ -1,0 +1,2 @@
+metric,description,value,low_eod_threshold,high_eod_threshold
+impossibility_gap_ECE_range,Mean calibration range (low EOD quartile) minus mean range (high EOD quartile),-0.011472226669602958,0.1331633163316332,0.6662777129521587
