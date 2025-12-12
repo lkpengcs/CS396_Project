@@ -1,6 +1,7 @@
 # CS396 Project — Fairness, Bias Mitigation, and Analysis
 
 This repo trains baseline income classifiers on Adult Census-style tabular data, applies multiple fairness/bias-mitigation methods, and produces analysis artifacts (fairness metrics, error asymmetry, calibration, counterfactual flip rates, and figures).
+#### Trained model .pkl files are too large to upload to github so they are saved here: https://drive.google.com/drive/folders/16NorZ6R5xVCw0NejPqKxSxXiKUFPo1rv?usp=sharing 
 
 ## Project layout
 
