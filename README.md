@@ -12,26 +12,21 @@ This repo trains baseline income classifiers on Adult Census-style tabular data,
   `X_train_raw.csv`, `X_val_raw.csv`, `X_test_raw.csv`,
   `y_train.csv`, `y_val.csv`, `y_test.csv`.
 
-- `baseline/`  
+- `baseline/` 
   Baseline models + outputs.
   - `baseline_results.json`
   - `models/*_predictions.csv` (baseline predictions: `y_pred`, `y_prob`)
   - `feature_names.json`
   - `transformed_X_test.npz` (cached test features)
 
+- `advanced/`
+  advanced model (stretched deliverable)
 - `fairness_mitigation.py`  
   Trains bias-mitigated models and saves them to `saved_models/*.pkl`.
-
-- `saved_models/`  
-  Pickled mitigated models:
-  - `reweighed_logreg.pkl`
-  - `expgrad_equalized_odds.pkl`
-  - `calibrated_equalized_odds.pkl`
 
 - `mitigated/mitigated.py`  
   Evaluates mitigated models, writes `mitigated/mitigated_results.json`,
   and saves predictions to `mitigated/models/*_predictions.csv`.  
-  (Also re-saves the loaded model under `mitigated/models/<display_name>.pkl`.)  
 
 - `error_analysis/`  
   Error-asymmetry + feature-importance analysis scripts and CSV outputs.
