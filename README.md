@@ -38,11 +38,4 @@ This repo trains baseline income classifiers on Adult Census-style tabular data,
 - `figures/`, `figures_mitigated/`, etc.  
   Generated plots.
 
-## Environment setup
-
-Use the repo’s `environment.yml` if provided, or create your own environment with:
-
-```bash
-conda create -n cs396 python=3.11 -y
-conda activate cs396
-pip install -U numpy pandas scikit-learn scipy joblib matplotlib fairlearn
+use environment.yml file to set up environment
