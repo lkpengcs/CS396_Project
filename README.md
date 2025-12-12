@@ -2,7 +2,7 @@
 
 This repo trains baseline income classifiers on Adult Census-style tabular data, applies multiple fairness/bias-mitigation methods, and produces analysis artifacts (fairness metrics, error asymmetry, calibration, counterfactual flip rates, and figures).
 
-## Project layout (high level)
+## Project layout
 
 - `preprocess.py`  
   Builds the preprocessing pipeline (e.g., one-hot encoding + scaling) and saves `preprocessor.pkl`.
